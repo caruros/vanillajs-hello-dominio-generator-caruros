@@ -1,11 +1,17 @@
-import "bootstrap";
-import "./style.css";
+let pronoun = ['the', 'our'];
+let adj = ['great', 'big'];
+let noun = ['jogger', 'racoon'];
 
+console.log("Soy cualquier mensaje")
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+for(let i=0;i<pronoun.length;i++){
+  for(let i2=0;i2<adj.length;i2++){
+    for(let i3=0;i3<noun.length;i3++){
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+      let dominio = pronoun[i]+adj[i2]+noun[i3]+".com";
+
+      console.log(dominio);
+    }
+  }
+}
+
